@@ -47,7 +47,7 @@ jobs:
       - name: Definir tag única da imagem
         id: build_tag
         run: echo "image_tag=${{ github.sha }}" >> $GITHUB_OUTPUT
-        
+
       - name: Configurar AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
