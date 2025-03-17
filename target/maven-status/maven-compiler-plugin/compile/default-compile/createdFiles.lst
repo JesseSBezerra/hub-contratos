@@ -1,0 +1,9 @@
+br\com\jdsb\hub\HubContratosApplication.class
+br\com\jdsb\hub\avro\LancamentoEvent.class
+br\com\jdsb\hub\consumer\LancamentoConsumer.class
+br\com\jdsb\hub\repository\LancamentoRepository.class
+br\com\jdsb\hub\entity\LancamentoEntity.class
+br\com\jdsb\hub\service\LancamentoService.class
+br\com\jdsb\hub\avro\LancamentoEvent$Builder.class
+br\com\jdsb\hub\config\DynamoDBConfig.class
+br\com\jdsb\hub\mapper\LancamentoMapper.class

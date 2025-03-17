@@ -1,0 +1,8 @@
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\avro\LancamentoEvent.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\mapper\LancamentoMapper.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\config\DynamoDBConfig.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\service\LancamentoService.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\consumer\LancamentoConsumer.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\entity\LancamentoEntity.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\HubContratosApplication.java
+C:\TEDIOINFERNAL\pocs\hub-contratos\src\main\java\br\com\jdsb\hub\repository\LancamentoRepository.java
