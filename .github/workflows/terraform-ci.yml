@@ -47,6 +47,13 @@ jobs:
       - name: Definir tag única da imagem
         id: build_tag
         run: echo "image_tag=${{ github.sha }}" >> $GITHUB_OUTPUT
+        
+      - name: Configurar AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
 
       - name: Instalar Terraform
         uses: hashicorp/setup-terraform@v2
@@ -66,13 +73,6 @@ jobs:
         if: needs.decidir.outputs.destroy_flag == 'false' || needs.decidir.outputs.destroy_flag == ''
         run: terraform apply -auto-approve -var-file="terraform.tfvars"
         working-directory: ecr
-
-      - name: Configurar AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: sa-east-1
 
       - name: Login no ECR
         id: login-ecr
